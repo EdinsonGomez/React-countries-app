@@ -1,4 +1,4 @@
-import { useGetCountriesQuery } from '../../api/countriesApi';
+import { useGetCountriesQuery } from '../../services/countries';
 import List from '../list/List';
 
 export default function CountriesList() {
