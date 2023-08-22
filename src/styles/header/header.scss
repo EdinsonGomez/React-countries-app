@@ -1,0 +1,10 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	box-shadow: 0 4px 8px 4px rgba($color: #000, $alpha: 0.3);
+}
+
+.dark-btn {
+	display: flex;
+}

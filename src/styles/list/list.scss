@@ -1,0 +1,10 @@
+.list-countries {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.list-countries__item {
+	width: 270px;
+	height: 300px;
+	box-shadow: 0 3px 4px 2px rgba($color: #000000, $alpha: 0.2);
+}
