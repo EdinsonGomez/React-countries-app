@@ -23,6 +23,7 @@ export default function Filters() {
 
   const onSelect = (value) => {
     dispatch(setRegion(value));
+    if (search) dispatch(setSearch(''));
     navigate('/list/region');
   };
 
