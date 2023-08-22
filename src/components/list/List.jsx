@@ -5,7 +5,7 @@ export default function List({ countries }) {
   return (
     <div className="list">
       {countries.map((country) => (
-        <ListITem key={`country-${country.cioc}`} country={country} />
+        <ListITem key={`country-${country.ccn3}`} country={country} />
       ))}
     </div>
   );

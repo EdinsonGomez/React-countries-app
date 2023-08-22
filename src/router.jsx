@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import HomePage from './routes/HomePage';
 import RegionPage from './routes/RegionPage';
+import SearchPage from './routes/SearchPage';
 
 const router = createBrowserRouter([
   {
@@ -8,8 +9,12 @@ const router = createBrowserRouter([
     element: <HomePage />,
     children: [
       {
-        path: 'region',
+        path: 'list/region',
         element: <RegionPage />,
+      },
+      {
+        path: 'list/search',
+        element: <SearchPage />,
       },
     ],
   },

@@ -11,6 +11,11 @@
 	.header__title {
 		font-weight: 900;
 		cursor: pointer;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
 	}
 
 	.dark-btn {
