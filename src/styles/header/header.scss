@@ -1,10 +1,52 @@
+@import '../variables.scss';
+
 .header {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: nowrap;
-	box-shadow: 0 4px 8px 4px rgba($color: #000, $alpha: 0.3);
+	align-items: center;
+	padding: 0 30px;
+	box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.3);
+	// background: $background-elements;
+
+	.header__title {
+		font-weight: 900;
+		cursor: pointer;
+	}
+
+	.dark-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		cursor: pointer;
+	}
+
+	.dark-btn__icon {
+		height: 20px;
+		// color: var(--text-color);
+	}
 }
 
-.dark-btn {
-	display: flex;
+@media (max-width: 600px) {
+	.header__title {
+		font-size: 28px;
+	}
+
+	.dark-btn span {
+		font-size: 15px;
+	}
+
+	.dark-btn__icon {
+		height: 18px;
+	}
+}
+
+@media (max-width: 415px) {
+	.header {
+		padding: 0 10px;
+
+		.header__title {
+			font-size: 20px;
+		}
+	}
 }

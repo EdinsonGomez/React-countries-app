@@ -1,5 +1,5 @@
 import { Outlet, useMatch } from 'react-router-dom';
-import Filters from '../components/Filters/Filters';
+// import Filters from '../components/Filters/Filters';
 import CountriesList from '../components/countriesList/CountriesList';
 
 export default function HomePage() {
@@ -7,7 +7,7 @@ export default function HomePage() {
 
   return (
     <>
-      <Filters />
+      {/* <Filters /> */}
       {isHomeMatch && <CountriesList />}
       <Outlet />
     </>

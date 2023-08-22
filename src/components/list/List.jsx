@@ -1,12 +1,11 @@
+import ListITem from './ListItem';
 import '../../styles/list/list.scss';
 
 export default function List({ countries }) {
   return (
-    <div className="list-countries">
+    <div className="list">
       {countries.map((country) => (
-        <div key={`country-${country.cioc}`} className="list-countries__item">
-          Country item
-        </div>
+        <ListITem key={`country-${country.cioc}`} country={country} />
       ))}
     </div>
   );
