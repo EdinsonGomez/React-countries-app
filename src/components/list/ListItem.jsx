@@ -2,9 +2,10 @@ import numbersHelpers from '../../helpers/numbers';
 
 const { formatToDecimal } = numbersHelpers;
 
-export default function ListITem({ country }) {
+export default function ListITem({ country, onClick }) {
   return (
-    <div className="list_item">
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events
+    <div className="list_item" role="button" tabIndex="0" onClick={() => onClick(country)}>
       <img alt={`flag-${country.ccn3}`} src={`${country?.flags?.png}`} />
       <div className="list_item__description">
         <p className="list_item__name">{country?.name?.common}</p>

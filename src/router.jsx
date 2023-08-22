@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import HomePage from './routes/HomePage';
 import RegionPage from './routes/RegionPage';
 import SearchPage from './routes/SearchPage';
+import CountryPage from './routes/CountryPage';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
         element: <SearchPage />,
       },
     ],
+  },
+  {
+    path: '/country/:code',
+    element: <CountryPage />,
   },
 ]);
 
