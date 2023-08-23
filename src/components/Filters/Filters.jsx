@@ -61,6 +61,7 @@ export default function Filters() {
           onChange={handleChange}
           value={localSearch}
           onKeyUp={onKeyUp}
+          autoComplete="off"
         />
       </div>
 

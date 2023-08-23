@@ -1,12 +1,10 @@
-@import '../variables.scss';
-
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 30px;
 	box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.3);
-	// background: $background-elements;
+	background: var(--color-background-elements);
 
 	.header__title {
 		font-weight: 900;
@@ -24,11 +22,13 @@
 		align-items: center;
 		gap: 8px;
 		cursor: pointer;
+		border: none;
+		background: inherit;
 	}
 
 	.dark-btn__icon {
 		height: 20px;
-		// color: var(--text-color);
+		color: var(--color-text);
 	}
 }
 

@@ -37,7 +37,7 @@ export default function SelectCustom({ value, placeholder, onChange }) {
 
   return (
     <div
-      className="select-custom"
+      className={`select-custom ${isActive ? 'isActive' : ''}`}
       role="button"
       tabIndex={0}
       onClick={onClick}

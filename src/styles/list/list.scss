@@ -14,7 +14,7 @@ $item-width: 250px;
 	height: 300px;
 	box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
 	border-radius: $item-radious;
-	// background: $background-elements;
+	background: var(--color-background-elements);
 
 	img {
 		width: 100%;
