@@ -1,8 +1,15 @@
-# React + Vite
+# React Countries App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+App de [React](https://es.react.dev/) que se integra con la api [https://restcountries.com/]() donde se lista los paises con los filtro de busqueda y region.
 
-Currently, two official plugins are available:
+Live Demo: [React Countries App](https://react-countries-app-edinsongomez.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Ejecutar proyecto
+
+Primero, ejecutar el servidor de desarrollo:
+
+```
+npm run dev
+```
+
+Abre [http://localhost:5173/]() en tu navegador para ver el resultado.
