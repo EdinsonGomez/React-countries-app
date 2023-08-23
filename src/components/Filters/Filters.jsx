@@ -4,10 +4,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { setSearch, setRegion } from 'src/store/filtersReducers';
 import SelectCustom from './SelectCustom';
-import { setSearch, setRegion } from '../../store/filtersReducers';
 
-import '../../styles/filters/filters.scss';
+import 'src/styles/filters/filters.scss';
 
 export default function Filters() {
   const dispatch = useDispatch();

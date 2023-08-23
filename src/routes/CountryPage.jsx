@@ -1,8 +1,8 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
-import { useGetCountryByCodeQuery } from '../services/country';
-import useToDetailsPage from '../hooks/useToDetailsPage';
+import { useGetCountryByCodeQuery } from 'src/services/country';
+import useToDetailsPage from 'src/hooks/useToDetailsPage';
 
 import '../styles/country/country.scss';
 

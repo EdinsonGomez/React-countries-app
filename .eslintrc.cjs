@@ -7,6 +7,16 @@ module.exports = {
     'airbnb',
     'plugin:react/jsx-runtime',
   ],
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['src', './src'],
+        ],
+        extensions: ['.js', '.jsx', '.json'],
+      },
+    },
+  },
   overrides: [
     {
       env: {

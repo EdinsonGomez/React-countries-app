@@ -1,5 +1,5 @@
-import api from '../api/api';
-import countryHelpers from '../helpers/country';
+import api from 'src/api/api';
+import countryHelpers from 'src/helpers/country';
 
 const { parseDataRequest } = countryHelpers;
 

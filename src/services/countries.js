@@ -1,4 +1,4 @@
-import api from '../api/api';
+import api from 'src/api/api';
 
 export const countriesEndppoints = api.injectEndpoints({
   endpoints: (builder) => ({

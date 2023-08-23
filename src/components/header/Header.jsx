@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-regular-svg-icons';
-import { changeTheme } from '../../store/themeReducer';
-import '../../styles/header/header.scss';
+import { changeTheme } from 'src/store/themeReducer';
+import 'src/styles/header/header.scss';
 
 export default function Header() {
   const dispatch = useDispatch();

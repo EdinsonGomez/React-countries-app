@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import api from '../api/api';
+import api from 'src/api/api';
 import filtersReducers from './filtersReducers';
 import themeReducer from './themeReducer';
 

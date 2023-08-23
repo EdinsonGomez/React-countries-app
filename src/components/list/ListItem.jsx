@@ -1,4 +1,4 @@
-import numbersHelpers from '../../helpers/numbers';
+import numbersHelpers from 'src/helpers/numbers';
 
 const { formatToDecimal } = numbersHelpers;
 

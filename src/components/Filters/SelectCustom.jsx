@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useState, useEffect, useRef } from 'react';
 
-import '../../styles/filters/selectCustom.scss';
+import 'src/styles/filters/selectCustom.scss';
 
 const regions = {
   Africa: 'Africa',
