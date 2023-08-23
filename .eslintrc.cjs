@@ -7,6 +7,16 @@ module.exports = {
     'airbnb',
     'plugin:react/jsx-runtime',
   ],
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['src', './src'],
+        ],
+        extensions: ['.js', '.jsx', '.json'],
+      },
+    },
+  },
   overrides: [
     {
       env: {
@@ -27,5 +37,14 @@ module.exports = {
   ignorePatterns: ['vite.config.js'],
   rules: {
     'react/react-in-jsx-scope': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: false,
+        optionalDependencies: false,
+        peerDependencies: false,
+      },
+    ],
+    'react/prop-types': 0,
   },
 };

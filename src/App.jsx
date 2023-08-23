@@ -1,8 +1,14 @@
-import './styles/global.scss';
+import { RouterProvider } from 'react-router-dom';
+import router from 'src/router';
+import Header from 'src/components/header/Header';
+import 'src/styles/global.scss';
 
 function App() {
   return (
-    <h1>Countries App</h1>
+    <>
+      <Header />
+      <RouterProvider router={router} />
+    </>
   );
 }
 
