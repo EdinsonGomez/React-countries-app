@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
-import { useGetSearchCountriesQuery } from '../services/countries';
-import List from '../components/list/List';
+import List from 'src/components/list/List';
+import { useGetSearchCountriesQuery } from 'src/services/countries';
 
 export default function RegionPage() {
   const { search } = useSelector((state) => state.filters);

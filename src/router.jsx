@@ -1,20 +1,24 @@
 import { createBrowserRouter } from 'react-router-dom';
-import HomePage from './routes/HomePage';
-import RegionPage from './routes/RegionPage';
-import SearchPage from './routes/SearchPage';
-import CountryPage from './routes/CountryPage';
+import HomePage from 'src/routes/HomePage';
+import RegionPage from 'src/routes/RegionPage';
+import SearchPage from 'src/routes/SearchPage';
+import CountryPage from 'src/routes/CountryPage';
+import CountriesPage from 'src/routes/CountriesPage';
 
 const router = createBrowserRouter([
   {
-    path: '/',
     element: <HomePage />,
     children: [
       {
-        path: 'list/region',
+        path: '/',
+        element: <CountriesPage />,
+      },
+      {
+        path: '/list/region',
         element: <RegionPage />,
       },
       {
-        path: 'list/search',
+        path: '/list/search',
         element: <SearchPage />,
       },
     ],

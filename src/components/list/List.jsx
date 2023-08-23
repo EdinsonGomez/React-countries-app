@@ -1,6 +1,6 @@
-import useToDetailsPage from '../../hooks/useToDetailsPage';
+import useToDetailsPage from 'src/hooks/useToDetailsPage';
 import ListITem from './ListItem';
-import '../../styles/list/list.scss';
+import 'src/styles/list/list.scss';
 
 export default function List({ countries }) {
   const { onRedirect } = useToDetailsPage();
